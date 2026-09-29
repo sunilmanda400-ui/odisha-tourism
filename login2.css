@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ROTATING WHEEL BACKGROUND */
+.rotating-wheel {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: rotateWheel 20s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.rotating-wheel::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  top: 30px;
+  left: 30px;
+  animation: rotateWheelReverse 30s linear infinite;
+}
+
+.rotating-wheel::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, rgba(255,255,255,0.5), transparent);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* WHEEL ROTATIONS */
+@keyframes rotateWheel {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotateWheelReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* MAIN WRAPPER */
+.login-wrapper {
+  width: 900px;
+  height: 520px;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+/* LEFT IMAGE */
+.image-section {
+  width: 45%;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 50%, rgba(240, 147, 251, 0.8) 100%);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  backdrop-filter: blur(5px);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.image-section img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.image-section h2 {
+  margin: 10px 0;
+}
+
+.image-section p {
+  opacity: 0.9;
+}
+
+/* FORM SECTION */
+.form-section {
+  width: 55%;
+  padding: 60px 50px;
+  animation: openBook 0.9s ease;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+/* BOOK OPEN EFFECT */
+@keyframes openBook {
+  from {
+    transform: rotateY(-90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
+
+.form-section h2 {
+  color: #667eea;
+  margin-bottom: 25px;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  color: #333;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.5);
+  transform: translateY(-2px);
+}
+
+/* SWITCH */
+.switch {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.switch span {
+  color: #0b5ed7;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Odisha Tourism</title>
+
+<link rel="stylesheet" href="loginpage.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+  <nav class="navbar" id="navbar">
+  <div class="logo">
+    <img src="images/817110e8-13d4-4ce3-9e5b-2a49bf0a708a-removebg-preview.png" alt="Tourism Odisha">
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="loginpage.html">Home</a></li>
+    <li><a href="about.html">About Odisha</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login2.html">Login / Sign in</a></li>
+    <li><a href="food.html" >Foods</a></li>
+    <li><a href="add-to-trip.html"><i class="fa-solid fa-suitcase-rolling"></i></a></li>
+    <li><a href="booking-history.html">History</a></li>
+    <li><a href="login2.html" onclick="logout()" class="logout-btn">Logout</a></li>
+  </ul>
+</nav>
+
+ <!-- HERO -->
+  <div class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Explore Incredible Odisha</h1>
+      <p>Culture • Nature • Heritage • Adventure</p>
+      <a href="about.html">Explore Now</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="categories">
+
+  <!-- ===== TEMPLES ===== -->
+  <div class="category-block">
+    <div class="category-header">
+      <h2>Temples</h2>
+      <button  class="view-all"><a href="touristplaces.html">View All</a></button>
+    </div>
+
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="https://www.tripsavvy.com/thmb/CqvMyrnnVy5fNLFYTr5zW13s-XE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/_DSC0713_Snapseed_Darkroom-819d0b229974460e8141622c4494e2ed.jpg">
+        <div class="category-content">
+          <h3>Puri</h3>
+          <p>Jagannath Temple</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Sun_Temple_Konark_Puri_District_Odisha.jpg">
+        <div class="category-content">
+          <h3>Konark</h3>
+          <p>Sun Temple</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/lingaraj-temple-bhubaneshwar-odisha-2-attr-hero?qlt=82&ts=1742165154990">
+        <div class="category-content">
+          <h3>Bhubaneswar</h3>
+          <p>Lingaraj Temple</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://thetempleguru.com/wp-content/uploads/2023/04/Tara-tarini-adi-shaktipeeth-4.jpg">
+        <div class="category-content">
+          <h3>Berhampur</h3>
+          <p>Tara Tarini Temple</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BEACHES ===== -->
+  <div class="category-block">
+    <div class="category-header">
+      <h2>Beaches</h2>
+      <button class="view-all"><a href="touristplaces.html">View All</a></button>
+    </div>
+
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="https://odishatour.in/wp-content/uploads/2025/03/swargadwar-beach-puri.jpg">
+        <div class="category-content">
+          <h3>Puri Beach</h3>
+          <p>Golden sands</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://odishatour.in/wp-content/uploads/2021/08/Chandrabhaga-Sea-Beach-konark-puri9.jpg">
+        <div class="category-content">
+          <h3>Chandrabhaga</h3>
+          <p>Sunrise beach</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdFGOycyYWx-nQLkwBI8n24h6L2tIlwGQjDA&s">
+        <div class="category-content">
+          <h3>Gopalpur</h3>
+          <p>Calm & peaceful</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://odishatour.in/wp-content/uploads/2021/07/Ramchandi-Temple-Brajrajnagar-Jharsuguda.jpg">
+        <div class="category-content">
+          <h3>Ramchandi</h3>
+          <p>Scenic views</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NATURE ===== -->
+  <div class="category-block">
+    <div class="category-header">
+      <h2>Nature</h2>
+      <button class="view-all"><a href="touristplaces.html">View All</a></button>
+    </div>
+
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="https://localdrive.in/wp-content/uploads/2025/07/Chilika-Lake-Odisha-A-Journey-Through-Heritage-Legends-Scenic-Beauty-1024x576.webp">
+        <div class="category-content">
+          <h3>Chilika Lake</h3>
+          <p>Asia’s largest lagoon</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://www.trawell.in/admin/images/upload/242260574Araku_Duduma.jpg">
+        <div class="category-content">
+          <h3>Duduma</h3>
+          <p>Waterfall</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://ekaxp.in/wp-content/uploads/2021/05/Eka-Simlipal-Road-trip.jpg">
+        <div class="category-content">
+          <h3>Simlipal</h3>
+          <p>Green forest</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://th-i.thgim.com/public/incoming/en8c3w/article69739073.ece/alternates/FREE_1200/00012Deo.jpg">
+        <div class="category-content">
+          <h3>Koraput</h3>
+          <p>Hills & valleys</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== WILDLIFE (NEW) ===== -->
+  <div class="category-block">
+    <div class="category-header">
+      <h2>Wildlife</h2>
+      <button class="view-all"><a href="touristplaces.html">View All</a></button>
+    </div>
+
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="https://kalingatv.com/wp-content/uploads/2025/10/Similipal-Tiger-Reserve.webp">
+        <div class="category-content">
+          <h3>Simlipal National Park</h3>
+          <p>Tigers & waterfalls.</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIwVJLJ1wk06ASzLJB7iC8gheDlrP5tJPzjw&s">
+        <div class="category-content">
+          <h3>Bhitarkanika</h3>
+          <p>Mangroves & crocodiles.</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://media.newindianexpress.com/newindianexpress/2025-01-18/ilz4f0ki/birds.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true">
+        <div class="category-content">
+          <h3>Chilika Birds</h3>
+          <p>Asia’s largest lagoon.</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://pbs.twimg.com/media/FR1w-VSaAAEdvSo.jpg">
+        <div class="category-content">
+          <h3>Debrigarh</h3>
+          <p>Wildlife & scenic views.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HILL STATIONS (NEW) ===== -->
+  <div class="category-block">
+    <div class="category-header">
+      <h2> Hill Stations</h2>
+      <button class="view-all"><a href="touristplaces.html">View All</a></button>
+    </div>
+
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="https://odishatour.in/wp-content/uploads/2022/02/Daringbadi-Mountain-viewPhulbani-kandhamal.jpg">
+        <div class="category-content">
+          <h3>Daringbadi</h3>
+          <p>Kashmir of Odisha.</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Khandagari_and_Udaygiri_featured_image.jpg">
+        <div class="category-content">
+          <h3>Udaygiri</h3>
+          <p>Lush valleys & culture.</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://cdn.tripuntold.com/media/photos/location/2019/03/24/56275a67-a076-4efb-8b25-f9cbe6e91b5f.jpg">
+        <div class="category-content">
+          <h3>Mahendragiri</h3>
+          <p>Mythology & nature.</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://odishatour.in/wp-content/uploads/2021/05/Gupteswar-Shiva-Temple-Koraput.jpg">
+        <div class="category-content">
+          <h3>Gupteswar</h3>
+          <p>Hill cave temple.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ===== Tribal Heritage ===== -->
+  <div class="category-block">
+    <div class="category-header">
+      <h2>Tribal Heritage</h2>
+      <button class="view-all"><a href="touristplaces.html">View All</a></button>
+    </div>
+
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="https://historified.in/wp-content/uploads/2024/05/1604947869_shutterstock_1488666659.jpg">
+        <div class="category-content">
+          <h3>Munda</h3>
+          <p>Munda tribe practices agriculture and is known for its strong community bonding and traditions.</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://cdn.magzter.com/1366109351/1658389439/articles/_HeroT3TS1658399185169/A-DAY-WITH-THE-SANTHALS.jpg">
+        <div class="category-content">
+          <h3>Santhal</h3>
+          <p>Santhals are one of the largest tribal communities in Odisha</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://media.istockphoto.com/id/1304171758/photo/onukudelli-in-odisha-india.jpg?s=612x612&w=0&k=20&c=69MxI4XeGfltOSXtH4UU4Je1BAgWF4kgnXHz9rs0a3w=">
+        <div class="category-content">
+          <h3>Bonda</h3>
+          <p>Bondas are a primitive tribal group known for their unique attire, customs, and isolated lifestyle.</p>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <img src="https://media.newindianexpress.com/TNIE%2Fimport%2F2023%2F3%2F13%2Foriginal%2FOdishatribes.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100">
+        <div class="category-content">
+          <h3>Juanga</h3>
+          <p>Juanga tribe lives in forested regions and is known for its hunting and gathering traditions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <h2>Odisha Tourism</h2>
+    <p>Visit Odisha and explore its culture, heritage, and natural beauty.</p>
+
+    <section id="terms">
+      <h3>Terms and Conditions</h3>
+      <p><strong>Booking Confirmation:</strong> All bookings are confirmed only after payment of the required advance.</p>
+      <p><strong>Advance Payment:</strong> To secure your booking, an advance payment is mandatory.</p>
+      <p><strong>Cancellation Policy:</strong> Cancellations must be made at least 2 days prior. A service charge of ₹1000 will be deducted from the advance. If you want to cancel, please <a href="contact.html">contact us</a>.</p>
+      <p><strong>No-Show Policy:</strong> If you do not show up, the booking amount will not be refunded.</p>
+      <p><strong>Changes to Booking:</strong> Inform us at least 2 days in advance for any changes.</p>
+      <p><strong>Liability:</strong> We are not responsible for personal injury or loss during the visit.</p>
+      <p><strong>Force Majeure:</strong> We are not liable for cancellations due to events beyond our control.</p>
+    </section>
+
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script src="loginpage.js"></script>
+</body>
+</html>

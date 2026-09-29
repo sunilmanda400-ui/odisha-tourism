@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Place Details</title>
+  <link rel="stylesheet" href="places-details.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+ <nav class="navbar" id="navbar">
+  <div class="logo">
+    <img src="images/817110e8-13d4-4ce3-9e5b-2a49bf0a708a-removebg-preview.png" alt="Tourism Odisha">
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="loginpage.html">Home</a></li>
+    <li><a href="about.html">About Odisha</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login2.html">Login / Sign in</a></li>
+    <li><a href="add-to-trip.html"><i class="fa-solid fa-suitcase-rolling"></i></a></li>
+    <li><a href="booking-history.html">History</a></li>
+    <li><button onclick="logout()" class="logout-btn">Logout</button></li>
+  </ul>
+</nav>
+
+
+<div class="details-container">
+
+  <h1 id="placeTitle"></h1>
+  <p class="location">
+    <i class="fa-solid fa-location-dot"></i>
+    <span id="placeLocation"></span>
+  </p>
+
+  <img id="placeImage" alt="Place Image">
+
+  <div class="info-grid">
+    <p><strong>City:</strong> <span id="placeCity"></span></p>
+    <p><strong>District:</strong> <span id="placeDistrict"></span></p>
+    <p><strong>Best Time:</strong> <span id="placeBestTime"></span></p>
+    <p><strong>Entry Fee:</strong> ₹<span id="placeFee"></span></p>
+  </div>
+
+  <p id="placeDescription" class="description"></p>
+
+  <div class="action-buttons">
+     <a id="wikiBtn" target="_blank" class="btn wiki-btn">
+      <i class="fa-brands fa-wikipedia-w"></i> Wikipedia
+    </a>
+
+    <button onclick="addToTrip()" class="btn trip-btn">
+      <i class="fa-solid fa-suitcase-rolling"></i> Add to Trip
+    </button>
+  </div>
+
+</div>
+
+<script src="navbar.js"></script>
+<script src="placesdata.js"></script>
+<script src="place-details.js"></script>
+</body>
+</html>

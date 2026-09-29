@@ -1,0 +1,64 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Page */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+/* Payment box */
+.payment-box {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 30px;
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Title */
+.payment-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Details */
+.details p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.details span {
+  font-weight: 600;
+}
+
+/* Button */
+.payment-box button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.payment-box button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}

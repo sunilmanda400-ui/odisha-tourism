@@ -1,0 +1,84 @@
+/* ==============================
+   RESET
+   ============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ==============================
+   BOOKING HISTORY PAGE
+   ============================== */
+body {
+  min-height: 100vh;
+  padding: 30px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+}
+
+/* Title */
+h2 {
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* History container */
+#historyContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Booking card */
+.history-card {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.history-card p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+/* Button */
+.history-card .download-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.history-card .cancel-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.history-card button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+

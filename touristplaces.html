@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tourist Places of Odisha</title>
+    <link rel="stylesheet" href="tourist-places.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+
+<nav class="navbar" id="navbar">
+  <div class="logo">
+    <img src="images/817110e8-13d4-4ce3-9e5b-2a49bf0a708a-removebg-preview.png" alt="Tourism Odisha">
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="loginpage.html">Home</a></li>
+    <li><a href="about.html">About Odisha</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login2.html">Login / Sign in</a></li>
+    <li><a href="add-to-trip.html"><i class="fa-solid fa-suitcase-rolling"></i></a></li>
+    <li><a href="booking-history.html">History</a></li>
+    <li><button onclick="logout()" class="logout-btn">Logout</button></li>
+  </ul>
+</nav>
+
+
+<!-- ============ HEADER ============ -->
+<div class="header">
+  <h1>Tourist Places of Odisha</h1>
+  <p>Explore the beauty and culture of Odisha</p>
+</div>
+
+<div id="placesContainer"></div>
+
+<footer class="footer">
+    <p>© 2026 Odisha Tourism | Designed & Developed by You</p>
+</footer>
+
+<script src="placesdata.js"></script>
+<script src="touristplaces.js"></script>
+<script src="navbar.js"></script>
+</body>
+</html>

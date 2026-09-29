@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select Your Vehicle</title>
+  <link rel="stylesheet" href="vehicle-selection.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+ <nav class="navbar" id="navbar">
+  <div class="logo">
+    <img src="images/817110e8-13d4-4ce3-9e5b-2a49bf0a708a-removebg-preview.png" alt="Tourism Odisha">
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="loginpage.html">Home</a></li>
+    <li><a href="about.html">About Odisha</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login2.html">Login / Sign in</a></li>
+    <li><a href="add-to-trip.html"><i class="fa-solid fa-suitcase-rolling"></i></a></li>
+    <li><a href="booking-history.html">History</a></li>
+    <li><button onclick="logout()" class="logout-btn">Logout</button></li>
+  </ul>
+</nav>
+
+  <div class="vehicle-container">
+    <h2>Select Your Vehicle</h2>
+
+    <!-- Trip Summary -->
+    <div class="trip-summary">
+      <p><strong>Number of People:</strong> <span id="peopleCount"></span></p>
+       </div>
+
+    <!-- Vehicle Cards -->
+    <div id="vehicleList" class="vehicle-grid"></div>
+  </div>
+
+  <script src="vehicle-selection.js"></script>
+</body>
+</html>

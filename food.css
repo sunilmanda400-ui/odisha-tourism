@@ -1,0 +1,286 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+/* ================= HEADER ================= */
+.header {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 50%, rgba(240, 147, 251, 0.9) 100%);
+  padding-top: 75px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.page-title {
+  text-align: center;
+  color: white;
+  padding: 50px 20px 40px;
+  margin-top: -20px;
+}
+
+.page-title h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.page-title p {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  opacity: 0.95;
+}
+
+/* ================= SECTIONS ================= */
+.unique-identity {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.unique-identity h2 {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.food-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+.food-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.15);
+  width: 260px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.food-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid rgba(240, 147, 251, 0.3);
+}
+
+.food-card h3 {
+  margin: 18px 0 12px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.food-description {
+  color: #555;
+  font-size: 13px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(102, 126, 234, 0.95);
+  padding: 12px;
+  border-radius: 10px;
+  color: rgb(21, 19, 19);
+}
+
+.food-card:hover .food-description {
+  opacity: 1;
+}
+
+/* ================= PLACES ================= */
+.places {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.place {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 14px;
+  padding: 18px;
+  width: 220px;
+  text-align: center;
+  color: #161616;
+  transform: translateY(-30px);
+  opacity: 0;
+  animation: slideDown 0.6s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.place:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.place h3 {
+  margin: 0 0 10px 0;
+  color: #121111;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.place p {
+  margin: 0;
+  font-size: 13px;
+  color: #171616;
+  line-height: 1.5;
+}
+
+/* ================= MODAL POPUP ================= */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  backdrop-filter: blur(2px);
+}
+
+.modal.show {
+  display: flex;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: popupSlideIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 15px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  color: #667eea;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #999;
+  transition: color 0.3s ease;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close:hover {
+  color: #667eea;
+}
+
+.modal-body {
+  padding: 20px 0;
+}
+
+.modal .places {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.modal .place {
+  transform: translateY(0);
+  opacity: 1;
+  animation: slideDown 0.5s ease forwards;
+  background: rgba(255, 255, 255, 0.25);
+  border: 2px solid #667eea;
+}
+
+.modal .place:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.modal .place:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.modal .place:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.modal .place:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes popupSlideIn {
+  from {
+    transform: scale(0.8) translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

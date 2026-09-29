@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Page layout */
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* Main container */
+.vehicle-container {
+  width: 100%;
+  max-width: 1100px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+.vehicle-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  padding: 40px 20px;
+}
+
+/* Title */
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+/* ✅ Trip Summary Box (NEW – REQUIRED) */
+.trip-summary {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-size: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.trip-summary span {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Vehicle cards layout */
+.vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Vehicle Card */
+.vehicle {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.vehicle:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.vehicle h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.vehicle p {
+  color: #f0f0f0;
+  margin: 6px 0;
+}
+
+/* Price */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 12px 0;
+}
+
+/* Button */
+.vehicle button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+}
+
+.vehicle button:hover {
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.5);
+  transform: translateY(-2px);
+}
+
+.vehicle button:hover {
+  opacity: 0.9;
+}

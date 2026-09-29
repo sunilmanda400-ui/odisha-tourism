@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  padding: 30px;
+}
+
+.invoice-box {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border: 1px solid #ddd;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.invoice-logo {
+  width: 70px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.sub {
+  color: #666;
+  font-size: 14px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+}
+
+th {
+  background: #667eea;
+  color: #fff;
+  text-align: left;
+}
+
+.status {
+  color: green;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+}
